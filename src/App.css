@@ -1,0 +1,48 @@
+.jumbotron {
+  background-image: url(./img/computer-angle-mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  font-family: 'VT323', monospace;
+}
+
+#monitor-screen {
+  height: 50vh;
+  position: absolute;
+  top: 15vh;
+  width: 33vw;
+  left: 30vw;
+  border-radius: 10px;
+  color: #03ff03;
+  transform: skewX(-12deg) rotate(12deg);
+}
+
+nav {
+  background-color: #CACBC5;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  opacity: 0.5;
+}
+
+nav a {
+  color: black;
+  font-family: 'Eczar', serif;
+}
+
+nav a:hover {
+  color: #003A00
+}
+
+@media only screen and (min-width: 768px) {
+  .jumbotron {
+    background-image: url(./img/computer-angle.jpg);
+    background-repeat: no-repeat;
+  }
+
+  #monitor-screen {
+    height: 33vh;
+    top: 15vh;
+    left: 55vw;
+  }
+}
