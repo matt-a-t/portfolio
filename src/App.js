@@ -3,7 +3,7 @@ import './App.css'
 
 import Jumbo from './jumbo'
 import Work from './work'
-import Footer from './quotes'
+import Footer from './footer'
 
 class App extends Component {
 	render() {
