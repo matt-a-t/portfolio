@@ -8,6 +8,7 @@
     "react-addons-css-transition-group": "^15.6.0",
     "react-addons-transition-group": "^15.6.0",
     "react-dom": "^15.6.1",
+    "react-icons-kit": "^1.1.12",
     "react-parallax": "^2.0.0",
     "react-scripts": "^1.1.5",
     "react-typing-animation": "^1.1.5"

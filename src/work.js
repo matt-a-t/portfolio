@@ -2,7 +2,8 @@ import React, { Component } from 'react'
 import { Parallax } from 'react-parallax'
 
 const workCard = {
-	background: 'rgba(255,255,255, 0.3)',
+	background: 'rgba(255,255,105, 0.3)',
+	borderRadius: '25px',
 	margin: '10%',
 	textAlign: 'center',
 	padding: '20px'
@@ -14,7 +15,7 @@ class  Work extends Component {
 			<div>
 				<Parallax 
 					blur={0}
-					bgImage={require('./img/light-bulb-1920-darker.jpg')}
+					bgImage={require('./img/lamps.jpg')}
 					bgImageAlt='A lightbulb robot plugging itself into an outlet.'
 					strength={500}
 				>
