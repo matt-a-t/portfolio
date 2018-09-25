@@ -9,49 +9,51 @@ const workCard = {
 	padding: '20px'
 }
 
+const works = [
+	{
+		title: 'Pathfinder Grapple App',
+		tagline: 'Simplifying Tabletop Gaming',
+		desc: `This app attempts to solve a familiar complaint from the Pathfinder 
+			gaming community. The rules surrounding grappling are confusing and
+			many avoid it entirely. Designed primarily for mobile use, this app
+			allows for users to track the rules as they play the game.`
+	}, {
+		title: 'Hoosier Action',
+		tagline: 'Political Action in Indiana',
+		desc: `Hoosier Action is a group committed to fighting racism in central Indiana. 
+			They're a fantasic group and I would recommend following the link to find out
+			more about the organization. I worked to update their site with a rebrand 
+			drawing attention to the people and relationships of the group.`
+	}, {
+		title: 'Cornerstone Information Systems',
+		tagline: 'My Day Job',
+		desc: `In addition to the work I have displayed here, there is much that I have
+			developed that I am unable to show. At Cornerstone, I have used React, ColdFusion,
+			ASP .NET Core, PHP, and Python to solve a myriad of problems. I have developed
+			solutions for the web, as well as Sharepoint, Salesforce, and Azure.`
+	}
+]
+
 class  Work extends Component {
 	render() {
 		return (
 			<div>
 				<Parallax 
 					blur={0}
-					bgImage={require('./img/lamps.jpg')}
+					bgImage={require('./img/light-bulb-1920-darker.jpg')}
 					bgImageAlt='A lightbulb robot plugging itself into an outlet.'
 					strength={500}
 				>
 					<div style={{height: '1080px'}}>
-						<div style={workCard}>
-							<h2>Pathfinder Grapple App</h2>
-							<h3>Simplifying Tabletop Gaming</h3>
-							<p>
-              This app attempts to solve a familiar complaint from the Pathfinder 
-              gaming community. The rules surrounding grappling are confusing and
-              many avoid it entirely. Designed primarily for mobile use, this app
-              allows for users to track the rules as they play the game.
-							</p>
-						</div>
-
-						<div style={workCard}>
-							<h2>Hoosier Action</h2>
-							<h3>Political Action in Indiana</h3>
-							<p>
-              Hoosier Action is a group committed to fighting racism in central Indiana. 
-              They're a fantasic group and I would recommend following the link to find out
-              more about the organization. I worked to update their site with a rebrand 
-              drawing attention to the people and relationships of the group.
-							</p>
-						</div>
-
-						<div style={workCard}>
-							<h2>Cornerstone Information Systems</h2>
-							<h3>My Day Job</h3>
-							<p>
-              In addition to the work I have displayed here, there is much that I have
-              developed that I am unable to show. At Cornerstone, I have used React, ColdFusion,
-              ASP .NET Core, PHP, and Python to solve a myriad of problems. I have developed
-              solutions for the web, as well as Sharepoint, Salesforce, and Azure.
-							</p>
-						</div>
+						
+						{works.map(work => (
+							<div style={workCard}>
+								<h2>{work.title}</h2>
+								<h3>{work.tagline}</h3>
+								<p>{work.desc}</p>
+							</div>
+						))}
+						
 					</div>
 				</Parallax>
 			</div>

@@ -14,7 +14,7 @@ class Footer extends Component {
 		return (
 			<Parallax
 				blur={0}
-				bgImage={require('./img/light-bulb-1920-darker.jpg')}
+				bgImage={require('./img/lamps.jpg')}
 				bgImageAlt='A lightbulb robot plugging itself into an outlet.'
 				strength={500}
 			>
