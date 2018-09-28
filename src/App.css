@@ -1,5 +1,5 @@
 body {
-  background-color: 'black';
+  background-color: #010101;
   font-family: 'Raleway', sans-serif;
 }
 
@@ -12,13 +12,28 @@ h1 {
 }
 
 h2 {
-  font-size:
+  font-size: 82px;
 }
 
 h3 {
-  font-size: 
+  font-size: 42px;
 }
 
 p {
   font-size: 20px;
+}
+
+@media (max-width: 480px) {
+  h1 {
+    margin-top: 100px;
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+
+  h3 {
+    font-size: 23px;
+  }
 }
