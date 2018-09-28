@@ -18,12 +18,6 @@ const emailStyle = {
 class Footer extends Component {
 	render() {
 		return (
-			// <Parallax
-			// 	blur={0}
-			// 	bgImage={require('./img/lamps.jpg')}
-			// 	bgImageAlt='A series of hanging light bulbs on a black background.'
-			// 	strength={500}
-			// >
 			<div
 				style={{
 					textAlign: 'center',
@@ -36,12 +30,17 @@ class Footer extends Component {
 					at <a href="mailto:matt.armstro@gmail.com" style={emailStyle}>matt.armstro@gmail.com</a>.
       		I can also be found on Twitter, Github, and LinkedIn at the icons below.
 				</p>
-
-				<Icon icon={twitter} size={64} style={iconStyle} />
-				<Icon icon={github} size={64} style={iconStyle} />
-				<Icon icon={linkedin} size={64} style={iconStyle} />
+				
+				<a href='https://twitter.com/The42ndMatt' target='new'>
+					<Icon icon={twitter} size={64} style={iconStyle} />
+				</a>
+				<a href='https://github.com/matt-a-t' target='new'>
+					<Icon icon={github} size={64} style={iconStyle} />
+				</a>
+				<a href='https://www.linkedin.com/in/matt-armstrong-064b66130/'>
+					<Icon icon={linkedin} size={64} style={iconStyle} />
+				</a>
 			</div>
-			// </Parallax>
 		)
 	}
 }
