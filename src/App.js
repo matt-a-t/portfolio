@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "./App.css";
 
 import Jumbo from "./Jumbo";
-import Work from "./work";
+import Work from "./Work";
 import Footer from "./footer";
 
 class App extends Component {
