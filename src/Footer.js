@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 
 import { Icon } from "react-icons-kit";
 import { github, twitter, linkedin } from "react-icons-kit/icomoon";
