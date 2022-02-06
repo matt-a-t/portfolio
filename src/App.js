@@ -3,7 +3,7 @@ import "./App.css";
 
 import Jumbo from "./Jumbo";
 import Work from "./Work";
-import Footer from "./footer";
+import Footer from "./Footer";
 
 class App extends Component {
     render() {
